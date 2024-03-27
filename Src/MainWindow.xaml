@@ -1,0 +1,348 @@
+﻿<Window x:Class="TKM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TKM"
+        mc:Ignorable="d"
+        FontFamily="./Assets/#Urbanist Variable"
+        FontSize="16"
+        Background="#F8F9FA"
+        Title="Dashboard" Height="1024" Width="1440" d:Height="1024">
+    <Grid
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Background="#F8F9FA">
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="BorderThickness" Value="0" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                <Setter Property="Background" Value="Transparent" />
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="269"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer>
+            <Border Padding="32,38,32,0" Background="#FFFFFF">
+
+                <StackPanel>
+                    <Border>
+                        <Image Height="61" Source="Assets/logo.png"/>
+                    </Border>
+
+                    <StackPanel Margin="0,53,0,0">
+                        <StackPanel>
+                            <Label Foreground="#BDC1C6">GENERAL</Label>
+                            <Grid Margin="0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Button Padding="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                                    <Border Background="#F5EFEC" Padding="24,10" CornerRadius="16">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                            <Image Height="24" Source="Assets/Icons/Widget 2.png"/>
+                                            <Label Margin="10,0" Foreground="#9A603F" VerticalAlignment="Center">Dashboard</Label>
+                                        </StackPanel>
+                                    </Border>
+                                </Button>
+                                <Button Grid.Row="1" Margin="0,2">
+                                    <Border Background="Transparent" Padding="24,10" CornerRadius="16">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                            <Image Height="24" Source="Assets/Icons/How it works 1.png"/>
+                                            <Label Margin="10,0" Foreground="#000000" VerticalAlignment="Center">How It Works</Label>
+                                        </StackPanel>
+                                    </Border>
+                                </Button>
+                                <Button Grid.Row="2" Margin="0,2" Padding="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                                    <Border Background="Transparent" Padding="24,10" CornerRadius="16">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                            <Image Height="24" Source="Assets/Icons/Layer 10Resources-tkm.png"/>
+                                            <Label Margin="10,0" Foreground="#000000" VerticalAlignment="Center">Resources</Label>
+                                        </StackPanel>
+                                    </Border>
+                                </Button>
+                            </Grid>
+                        </StackPanel>
+                        <StackPanel>
+                            <Label Foreground="#BDC1C6">COURSES</Label>
+                            <Grid Margin="0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Button Padding="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                                    <Border Background="Transparent" Padding="24,10" CornerRadius="16">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                            <Image Height="24" Source="Assets/Icons/Vectorworkout.png"/>
+                                            <Label Margin="10,0" Foreground="#000000" VerticalAlignment="Center">Workout</Label>
+                                        </StackPanel>
+                                    </Border>
+                                </Button>
+                                <Button Grid.Row="1" Margin="0,2" Padding="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                                    <Border Background="Transparent" Padding="24,10" CornerRadius="16">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                            <Image Height="24" Source="Assets/Icons/Notebook Bookmark.png"/>
+                                            <Label Margin="10,0" Foreground="#000000" VerticalAlignment="Center">Trainings</Label>
+                                        </StackPanel>
+                                    </Border>
+                                </Button>
+                            </Grid>
+                        </StackPanel>
+                        <StackPanel>
+                            <Label Foreground="#BDC1C6">OTHER</Label>
+                            <Grid Margin="0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Button Padding="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                                    <Border Background="Transparent" Padding="24,10" CornerRadius="16">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                            <Image Height="24" Source="Assets/Icons/Group 45.png"/>
+                                            <Label Margin="10,0" Foreground="#000000" VerticalAlignment="Center">Leader Board</Label>
+                                        </StackPanel>
+                                    </Border>
+                                </Button>
+                                <Button Grid.Row="1" Margin="0,2" Padding="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                                    <Border Background="Transparent" Padding="24,10" CornerRadius="16">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                            <Image Height="24" Source="Assets/Icons/Settings.png"/>
+                                            <Label Margin="10,0" Foreground="#000000" VerticalAlignment="Center">Setting</Label>
+                                        </StackPanel>
+                                    </Border>
+                                </Button>
+                            </Grid>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Margin="0,20,0,10">
+                        <Border Background="#9A603F" Padding="10" CornerRadius="29">
+                            <StackPanel HorizontalAlignment="Center">
+                                <TextBlock HorizontalAlignment="Center" Foreground="#FFFFFF" FontWeight="Bold" FontSize="24" TextWrapping="Wrap">Still Have Questions?</TextBlock>
+                                <Label Margin="0,5,0,10" Foreground="#FFFFFF" HorizontalAlignment="Center">We’re Here To Support</Label>
+                                <Button Background="Transparent" Padding="0" Margin="0,20,0,10" HorizontalAlignment="Stretch">
+                                    <Border Background="#FFFFFF" Padding="40,10" CornerRadius="12.43">
+                                        <Label Foreground="#9A603F">Contact</Label>
+                                    </Border>
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                        <Button Margin="0,35,0,0" Padding="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                            <Border Background="Transparent" Padding="24,10" CornerRadius="16">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                    <Image Height="24" Source="Assets/Icons/Logout 2.png"/>
+                                    <Label Margin="10,0" Foreground="#000000" VerticalAlignment="Center">Log Out</Label>
+                                </StackPanel>
+                            </Border>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+        <ScrollViewer Grid.Column="1">
+            <Border Padding="15,24">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Border Padding="15" Background="#FFFFFF" CornerRadius="15">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel >
+                                <TextBlock Foreground="#000000" FontSize="24" FontWeight="Bold">Welcome Back, Peter!</TextBlock>
+                                <TextBlock Margin="0,5,0,0">Ready to give your brain a workout?</TextBlock>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <StackPanel VerticalAlignment="Center" >
+                                    <TextBlock FontSize="20" FontWeight="Bold">Monday</TextBlock>
+                                    <TextBlock FontSize="14" Foreground="#898891">February 22, 2023</TextBlock>
+                                </StackPanel>
+                                <StackPanel Margin="25,0,0,0" Orientation="Horizontal" VerticalAlignment="Center" >
+                                    <Image Height="40" Source="Assets/Icons/Group 9459.png"/>
+                                    <StackPanel Margin="10,0,0,0">
+                                        <TextBlock FontSize="14" FontWeight="Bold">Sound Check</TextBlock>
+                                        <Border Width="103" Margin="0,10,0,0" Height="8" Background="#4ADE80" CornerRadius="5"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Margin="25,0,0,0" VerticalAlignment="Center" Orientation="Horizontal">
+                                    <Button Background="Transparent" Padding="0">
+                                        <Image Height="50" Source="Assets/Icons/Search.png"/>
+                                    </Button>
+                                    <Button Background="Transparent" Padding="0" Margin="10,0,0,0">
+                                        <Image Height="50" Source="Assets/Icons/Notif.png"/>
+                                    </Button>
+                                    <Button Background="Transparent" Padding="0" Margin="10,0,0,0">
+                                        <Border Height="58" Width="58">
+                                            <Image Height="58" Source="Assets/Icons/Profile.png"/>
+                                        </Border>
+                                    </Button>
+                                    <Button Background="Transparent" Padding="0" Margin="10,0,0,0">
+                                        <Border Height="58" Width="58">
+                                            <Image Height="40" Source="Assets/Icons/Icon.png"/>
+                                        </Border>
+                                    </Button>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <Grid Grid.Row="1" Margin="10,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="419"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Button HorizontalAlignment="Stretch" Padding="0" Background="Transparent">
+                                <Border Background="#FFFFFF" Padding="24,10" CornerRadius="15" HorizontalAlignment="Stretch" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Height="24" Source="Assets/Icons/Soundwave Circle.png"/>
+                                        <TextBlock Margin="10" Foreground="#000000" FontSize="24">Continue Training</TextBlock>
+                                    </StackPanel>
+                                </Border>
+                            </Button>
+                            <Grid Grid.Row="1" Margin="0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <!--Replace with correct video-->
+                                <MediaElement VerticalAlignment="Stretch" Height="296" Source="Assets/file_example_MP4_480_1_5MG.mp4"/>
+                                <!--Just using image as placeholder-->
+                                <Border Height="296">
+                                    <Image Height="296" Source="Assets/Icons/Videostest.png"/>
+                                </Border>
+                                <TextBlock Grid.Row="1" Margin="10" Foreground="#000000">Introduction To The Kennedy Method</TextBlock>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Column="1" Margin="10,0,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Border CornerRadius="15" Background="#FFFFFF" Padding="10,20">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <StackPanel>
+                                        <TextBlock>
+                  <Run FontWeight="Black" Foreground="#000000">Your Speed Drill Baseline:</Run>
+                  <Run Foreground="#4ADE80">48.86s</Run>
+                                        </TextBlock>
+                                        <TextBlock Margin="0,2" FontSize="11">
+                <Run  Foreground="#000000">Most Recent:</Run>
+                <Run FontWeight="Black" Foreground="#000000">48.95</Run>
+                <Run  Foreground="#000000">Best:</Run>
+                <Run FontWeight="Black" Foreground="#000000">48.86s</Run>
+                <Run  Foreground="#000000">Initial:</Run>
+                <Run FontWeight="Black" Foreground="#000000">48.86s</Run>
+                                        </TextBlock>
+                                    </StackPanel>
+                                    <ComboBox Grid.Column="1" VerticalAlignment="Center" Width="130" Background="#FFFFFF" >
+                                        <ComboBoxItem>March 2024</ComboBoxItem>
+                                    </ComboBox>
+                                    <Grid Grid.Row="1" Grid.ColumnSpan="2">
+                                        <ListView Margin="10">
+                                            <ListView.View>
+                                                <GridView>
+                                                    <GridViewColumn Header="DATE" Width="120" />
+                                                    <GridViewColumn Header="TIME (MINUTES)" Width="50" />
+                                                    <GridViewColumn Header="ACCURACY (%)" Width="150"/>
+                                                    <GridViewColumn Header="WORDS" Width="150"/>
+                                                </GridView>
+                                            </ListView.View>
+                                        </ListView>
+                                    </Grid>
+                                </Grid>
+                            </Border>
+
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="2" Margin="10,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="419"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Button HorizontalAlignment="Left" Padding="0" Background="Transparent">
+                                <Border Background="Transparent" Padding="24,10" CornerRadius="15" HorizontalAlignment="Stretch" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Height="24" Source="Assets/Icons/Soundwave Circle.png"/>
+                                        <TextBlock Margin="10" Foreground="#000000" FontSize="24">Up Next</TextBlock>
+                                    </StackPanel>
+                                </Border>
+                            </Button>
+                            <StackPanel Grid.Row="1" Margin="0,2">
+                                <Border BorderThickness="1" Padding="15" BorderBrush="#9A603F" CornerRadius="15">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Height="52" Source="Assets/Icons/Tapping.png"/>
+                                        <StackPanel Margin="15,0,0,0" >
+                                            <TextBlock>Tapping</TextBlock>
+                                            <StackPanel Margin="0,8" Orientation="Horizontal" VerticalAlignment="Center">
+                                                <TextBlock Foreground="#9AA0A6" FontSize="14">Basic Training</TextBlock>
+                                                <Image Margin="8,0" Source="Assets/Icons/Ellipse 2.png"/>
+                                                <TextBlock Foreground="#9AA0A6" FontSize="14">John Kennedy</TextBlock>
+                                                <Image Margin="8,0" Source="Assets/Icons/Ellipse 2.png"/>
+                                                <TextBlock Foreground="#9AA0A6" FontSize="14">Training</TextBlock>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border BorderThickness="1" Padding="15" Margin="0,10" BorderBrush="#9A603F" CornerRadius="15">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Height="52" Source="Assets/Icons/Tapping.png"/>
+                                        <StackPanel Margin="15,0,0,0" >
+                                            <TextBlock>Tapping</TextBlock>
+                                            <StackPanel Margin="0,8" Orientation="Horizontal" VerticalAlignment="Center">
+                                                <TextBlock Foreground="#9AA0A6" FontSize="14">Basic Training</TextBlock>
+                                                <Image Margin="8,0" Source="Assets/Icons/Ellipse 2.png"/>
+                                                <TextBlock Foreground="#9AA0A6" FontSize="14">John Kennedy</TextBlock>
+                                                <Image Margin="8,0" Source="Assets/Icons/Ellipse 2.png"/>
+                                                <TextBlock Foreground="#9AA0A6" FontSize="14">Training</TextBlock>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                            <Border Grid.Row="2" Padding="20,25" Margin="0,10" Background="#FFFFFF" CornerRadius="15">
+                                <StackPanel VerticalAlignment="Center">
+                                    <TextBlock FontSize="18" FontWeight="Bold">Course Progress</TextBlock>
+                                    <StackPanel HorizontalAlignment="Stretch" Margin="0,10">
+                                        <TextBlock Foreground="#41475E" FontSize="12">75% Complete</TextBlock>
+                                        <Border HorizontalAlignment="Stretch" Margin="0,5" Height="1" Background="#ECEFF3"/>
+                                    </StackPanel>
+                                    <Border HorizontalAlignment="Stretch" Background="#BBBBBB" Height="8">
+                                        <Border Width="250" HorizontalAlignment="Left" Background="#EDA25B"/>
+                                    </Border>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</Window>

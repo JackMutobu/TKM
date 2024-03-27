@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{70704CC9-388A-4FFB-939E-D91C76020532}</ProjectGuid>
+    <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>TKM</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>Xamarin.Mac</TargetFrameworkIdentifier>
+    <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;NOESIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CodeSigningKey>Mac Developer</CodeSigningKey>
+    <CreatePackage>false</CreatePackage>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <UseSGen>true</UseSGen>
+    <UseRefCounting>true</UseRefCounting>
+    <AOTMode>None</AOTMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>NOESIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CreatePackage>true</CreatePackage>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <UseSGen>true</UseSGen>
+    <UseRefCounting>true</UseRefCounting>
+    <LinkMode>SdkOnly</LinkMode>
+    <AOTMode>None</AOTMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.Mac" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="..\..\Src\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\Src\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\Src\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Src\App.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Src\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\src\assets\Urbanist Variable Font.ttf">
+      <Link>Assets\Urbanist Variable Font.ttf</Link>
+    </Resource>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Noesis.App.Displays.AppKit">
+      <Version>3.*</Version>
+    </PackageReference>
+    <PackageReference Include="Noesis.App.RenderContexts.MTL">
+      <Version>3.*</Version>
+    </PackageReference>
+    <PackageReference Include="Noesis.App.RenderContexts.NSGL">
+      <Version>3.*</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(SolutionDir)Src\NoesisLicense.txt">
+      <Link>NoesisLicense.txt</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\src\assets\file_example_MP4_480_1_5MG.mp4">
+      <Link>Assets\file_example_MP4_480_1_5MG.mp4</Link>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\src\assets\icons\Ellipse 2.png">
+      <Link>Assets\Icons\Ellipse 2.png</Link>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\src\assets\icons\Group 45.png">
+      <Link>Assets\Icons\Group 45.png</Link>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\src\assets\icons\Group 9459.png">
+      <Link>Assets\Icons\Group 9459.png</Link>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\src\assets\icons\How it works 1.png">
+      <Link>Assets\Icons\How it works 1.png</Link>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\src\assets\icons\Icon.png">
+      <Link>Assets\Icons\Icon.png</Link>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\src\assets\icons\Layer 10Resources-tkm.png">
+      <Link>Assets\Icons\Layer 10Resources-tkm.png</Link>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\src\assets\icons\Layer 10Resources-tkm.svg">
+      <Link>Assets\Icons\Layer 10Resources-tkm.svg</Link>
+    </Content>
+    <Resource Include="..\..\src\assets\logo.png">
+      <Link>Assets\logo.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Widget 2.png">
+      <Link>Assets\Icons\Widget 2.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Videostest.png">
+      <Link>Assets\Icons\Videostest.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Vectorworkout.png">
+      <Link>Assets\Icons\Vectorworkout.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Tapping.png">
+      <Link>Assets\Icons\Tapping.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Soundwave Circle.png">
+      <Link>Assets\Icons\Soundwave Circle.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Settings.png">
+      <Link>Assets\Icons\Settings.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Setting.png">
+      <Link>Assets\Icons\Setting.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Search.png">
+      <Link>Assets\Icons\Search.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Profile.png">
+      <Link>Assets\Icons\Profile.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Notif.png">
+      <Link>Assets\Icons\Notif.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Notebook Bookmark.png">
+      <Link>Assets\Icons\Notebook Bookmark.png</Link>
+    </Resource>
+    <Resource Include="..\..\src\assets\icons\Logout 2.png">
+      <Link>Assets\Icons\Logout 2.png</Link>
+    </Resource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
+</Project>
